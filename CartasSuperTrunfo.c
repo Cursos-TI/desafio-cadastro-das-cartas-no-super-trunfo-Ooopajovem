@@ -17,6 +17,55 @@ int main() {
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    
+    //Variaveis que serao usadas
+    char estado1, estado2;
+    char codigoCarta1[3], codigoCarta2[3];
+    char Nomecidade1[20], Nomecidade2[20];
+    int Npopulacao1, Npopulacao2;
+    float quilomentros1, quilomentros2;
+    float PIB1, PIB2;
+    int PontoTuristico1, PontoTuristico2;
+
+    //Informaçoes da 1° cidade
+    printf("Informaçao da 1° carta\n");
+    printf("Escolha de A a H: \n");
+    scanf(" %c", &estado1); //coloqui um espaço a mais para evitar problemas
+    printf("Letra e numero de 01 a 04: ex A01\n");
+    scanf(" %s", codigoCarta1);//coloqui um espaço a mais para evitar problemas
+    printf("Nome da cidade 1: \n");
+    scanf(" %s", Nomecidade1);//coloqui um espaço a mais para evitar problemas
+    printf("População: \n");
+    scanf("%d", &Npopulacao1);
+    printf("Tamanho da cidade em KM2: \n");
+    scanf("%f", &quilomentros1);
+    printf("PIB: \n");
+    scanf("%f", &PIB1);
+    printf("Numero de pontos turistico: \n");
+    scanf("%d", &PontoTuristico1);
+
+    //Copei e colei tudo munado so as varias com base na 2 cidade
+    printf("Informaçao da 2° carta\n");
+    printf("Escolha de A a H: \n");
+    scanf(" %c", &estado2);//coloqui um espaço a mais para evitar problemas
+    printf("Letra e numero de 01 a 04: ex A02\n");
+    scanf(" %s", codigoCarta2);//coloqui um espaço a mais para evitar problemas
+    printf("Nome da cidade 2: \n");
+    scanf(" %s", Nomecidade2);//coloqui um espaço a mais para evitar problemas
+    printf("População: \n");
+    scanf("%d", &Npopulacao2);
+    printf("Tamanho da cidade em KM2: \n");
+    scanf("%f", &quilomentros2);
+    printf("PIB: \n");
+    scanf("%f", &PIB2);
+    printf("Numero de pontos turistico: \n");
+    scanf("%d", &PontoTuristico2);
+
+    printf("Carta 1\nEstado:%c\nCódigo:%s\nNome da Cidade:%s\nPopulação:%d\nÁrea:%.2fkm²\nPIB:%.2f\nNúmero de Pontos Turísticos:%d\n", estado1, codigoCarta1, Nomecidade1, Npopulacao1, quilomentros1, PIB1, PontoTuristico1);
+
+    printf("Carta 2\nEstado:%c\nCódigo:%s\nNome da Cidade:%s\nPopulação:%d\nÁrea:%.2fkm²\nPIB:%.2f\nNúmero de Pontos Turísticos:%d\n", estado2, codigoCarta2, Nomecidade2, Npopulacao2, quilomentros2, PIB2, PontoTuristico2);
+
+
 
     return 0;
 }
