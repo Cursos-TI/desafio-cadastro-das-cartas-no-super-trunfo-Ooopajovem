@@ -26,6 +26,9 @@ int main() {
     float quilomentros1, quilomentros2;
     float PIB1, PIB2;
     int PontoTuristico1, PontoTuristico2;
+    //Nova informaçoes solicitada no desafio N Aventureiro
+    float densidadePopulacional1, densidadePopulacional2;
+    float PIBperCapita1, PIBperCapita2;
 
     //Informaçoes da 1° cidade
     printf("Informaçao da 1° carta\n");
@@ -61,9 +64,16 @@ int main() {
     printf("Numero de pontos turistico: \n");
     scanf("%d", &PontoTuristico2);
 
-    printf("Carta 1\nEstado:%c\nCódigo:%s\nNome da Cidade:%s\nPopulação:%d\nÁrea:%.2fkm²\nPIB:%.2f\nNúmero de Pontos Turísticos:%d\n", estado1, codigoCarta1, Nomecidade1, Npopulacao1, quilomentros1, PIB1, PontoTuristico1);
+    //novas dados
+    densidadePopulacional1 = Npopulacao1 / quilomentros1;
+    densidadePopulacional2 = Npopulacao1 / quilomentros1;
+    PIBperCapita1 = PIB1 / Npopulacao1;
+    PIBperCapita2 = PIB2 / Npopulacao2;
 
-    printf("Carta 2\nEstado:%c\nCódigo:%s\nNome da Cidade:%s\nPopulação:%d\nÁrea:%.2fkm²\nPIB:%.2f\nNúmero de Pontos Turísticos:%d\n", estado2, codigoCarta2, Nomecidade2, Npopulacao2, quilomentros2, PIB2, PontoTuristico2);
+
+    printf("Carta 1\nEstado:%c\nCódigo:%s\nNome da Cidade:%s\nPopulação:%d\nÁrea:%.2fkm²\nPIB:%.2f\nNúmero de Pontos Turísticos:%d\nDensidade Populacional: %.2fhab/km²\nPIB per Capita: %.2fR$\n", estado1, codigoCarta1, Nomecidade1, Npopulacao1, quilomentros1, PIB1, PontoTuristico1, densidadePopulacional1, PIBperCapita1);
+
+    printf("Carta 2\nEstado:%c\nCódigo:%s\nNome da Cidade:%s\nPopulação:%d\nÁrea:%.2fkm²\nPIB:%.2f\nNúmero de Pontos Turísticos:%d\nDensidade Populacional: %.2fhab/km²\nPIB per Capita: %.2fR$\n", estado2, codigoCarta2, Nomecidade2, Npopulacao2, quilomentros2, PIB2, PontoTuristico2, densidadePopulacional2, PIBperCapita2);
 
 
 
