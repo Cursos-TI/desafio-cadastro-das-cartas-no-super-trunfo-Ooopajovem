@@ -104,5 +104,75 @@ int main() {
     printf("Inverso da Densidade: %d\n", rInversoDensidade);
     printf("Super Poder: %d (%.2f vs %.2f)\n", rSuperPoder, superPoder1, superPoder2);
 
+    /*
+    tema 2
+    nivel novato
+    */
+   printf("Cidade 1 VS Cidade 2: População\n");
+   if (Npopulacao1 > Npopulacao2){
+       printf("Cidade 1: %d\n", Npopulacao1);
+       printf("Cidade 2: %d\n", Npopulacao2);
+       printf("Resultado: Cidade 1 ganhou\n");
+   }
+   else{
+       printf("Cidade 1: %d\n", Npopulacao1);
+       printf("Cidade 2: %d\n", Npopulacao2);
+       printf("Resultado: Cidade 2 ganhou\n");
+   }
+   printf("Cidade 1 VS Cidade 2: Quilometros\n");
+   if (quilometros1 > quilometros2){
+       printf("Cidade 1: %f\n", quilometros1);
+       printf("Cidade 2: %f\n", quilometros2);
+       printf("Resultado: Cidade 1 ganhou\n");
+   }
+   else{
+       printf("Cidade 1: %f\n", quilometros1);
+       printf("Cidade 2: %f\n", quilometros2);
+       printf("Resultado: Cidade 2 ganhou\n");
+   }
+   printf("Cidade 1 VS Cidade 2: PIB\n");
+   if (PIB1 > PIB2){
+       printf("Cidade 1: %f\n", PIB1);
+       printf("Cidade 2: %f\n", PIB2);
+       printf("Resultado: Cidade 1 ganhou\n");
+   }
+   else{
+       printf("Cidade 1: %f\n", PIB1);
+       printf("Cidade 2: %f\n", PIB2);
+       printf("Resultado: Cidade 2 ganhou\n");
+   }
+   printf("Cidade 1 VS Cidade 2: N° Pontos Turistico\n");
+   if (PontoTuristico1 > PontoTuristico2){
+       printf("Cidade 1: %d\n", PontoTuristico1);
+       printf("Cidade 2: %d\n", PontoTuristico2);
+       printf("Resultado: Cidade 1 ganhou\n");
+   }
+   else{
+       printf("Cidade 1: %d\n", PontoTuristico1);
+       printf("Cidade 2: %d\n", PontoTuristico2);
+       printf("Resultado: Cidade 2 ganhou\n");
+   }
+   printf("Cidade 1 VS Cidade 2: Densidade Populacional\n");
+   if (densidadePopulacional1 > densidadePopulacional2){
+       printf("Cidade 1: %f\n", densidadePopulacional1);
+       printf("Cidade 2: %f\n", densidadePopulacional2);
+       printf("Resultado: Cidade 1 ganhou\n");
+   }
+   else{
+       printf("Cidade 1: %f\n", densidadePopulacional1);
+       printf("Cidade 2: %f\n", densidadePopulacional2);
+       printf("Resultado: Cidade 2 ganhou\n");
+   }
+   printf("Cidade 1 VS Cidade 2: PIB perCapita\n");
+   if (PIBperCapita1 > densidadePopulacional2){
+       printf("Cidade 1: %f\n", PIBperCapita1);
+       printf("Cidade 2: %f\n", PIBperCapita2);
+       printf("Resultado: Cidade 1 ganhou\n");
+   }
+   else{
+       printf("Cidade 1: %f\n", PIBperCapita1);
+       printf("Cidade 2: %f\n", PIBperCapita2);
+       printf("Resultado: Cidade 2 ganhou\n");
+   }
     return 0;
 }
